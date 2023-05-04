@@ -1,6 +1,7 @@
 const Car = require('../car');//imports 
 
 let car; //declaring object 
+
 beforeEach(() => {
     audi = new Car ("Audi", 35.000, "3.0L")
     mcLaren = new Car ("McLaren", 500.000, "4.0L")
