@@ -7,23 +7,42 @@ let dealership; //declaring object
 let porsche;
 
 beforeEach(() => {
-    dealership = new Dealership("RS Motors", 25);
+    dealership = new Dealership("Dealership", 25);
     porsche = new Car("Porsche", 100.000, "3.0L");
+    dealership.addStock(porsche)
+
 })
 
 test('can add stock', () => {
     dealership.addStock(porsche);
-    const expected = 1;
+    const expected = 2;
     expect(dealership.carsInStock.length).toBe(expected)
 })
 
 test('cars in stock', () => {
-    dealership.carsInStock();
-    const expected = 1;
-    expect(dealership.carsInStock.length).toBe(expected);
-
+    dealership.carsInStock;
+    const expected = 2;
+    expect(dealership.carsInStock()).toBe(expected);
 
 })
+
+// get all car manufacturers
+test('returns manufacturers', () => {
+    expected = ["Porsche"]
+    actual = dealership.manufacturerName()
+    expect(actual).toEqual(expected)
+});
+
+
+
+// find all cars from (manufacturers)
+// calculate stock value()
+
+
+
+
+
+
 
 
 
