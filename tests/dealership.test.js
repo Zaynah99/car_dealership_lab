@@ -1,1 +1,0 @@
-const Dealership = require('./dealership');

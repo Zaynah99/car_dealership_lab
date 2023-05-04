@@ -5,7 +5,4 @@ const Car = function (manufacturer, price, engine){
     this.engine = engine
 };
 
-const audi = new Car("Audi", "£35,000", "3.0L")
-console.log(audi);
-
-module.exports = {Car};
+module.exports = Car;
