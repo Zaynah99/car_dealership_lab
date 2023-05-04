@@ -3,7 +3,7 @@
 const Dealership = function (name, maxNoOfCars, carsInStock){
     this.name = name;
     this.maxNoOfCars = maxNoOfCars;
-    this.carsInStock = this.carsInStock;
+    this.carsInStock = [];
 };
 
 //FUNCTIONS
@@ -30,6 +30,7 @@ Dealership.prototype.getCarByManufacturer = function (){
     const filteredCars = this.carsInStock.filter ("Porsche");
 }
 
+//
 
 
 module.exports = Dealership;

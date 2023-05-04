@@ -13,18 +13,22 @@ beforeEach(() => {
 
 })
 
+
 test('can add stock', () => {
     dealership.addStock(porsche);
     const expected = 2;
     expect(dealership.carsInStock.length).toBe(expected)
 })
 
+
 test('cars in stock', () => {
-    dealership.carsInStock;
+    const ferrari = new Car ("Ferrari", 250.000, "4.0L")
+    dealership.addStock(ferrari);
     const expected = 2;
-    expect(dealership.carsInStock()).toBe(expected);
+    expect(dealership.carsInStock.length).toBe(expected);
 
 })
+
 
 // get all car manufacturers
 test('returns manufacturers', () => {
@@ -35,8 +39,19 @@ test('returns manufacturers', () => {
 
 
 
-// find all cars from (manufacturers)
+// // Filtered car manufacturer
+// test('returns filtered manufacturer', () => {
+//     const expected = Porsche;
+//     actual = dealership.getCarByManufacturer(Porsche)
+//     expect(actual).toBe(expected)
+// });
+
+
+
 // calculate stock value()
+
+
+
 
 
 
@@ -54,3 +69,4 @@ test('returns manufacturers', () => {
 // Return an array containing each car's manufacturer
 // Find all the cars from a given manufacturer
 // Find the total value of all the cars in stock
+
