@@ -1,14 +1,17 @@
+const Car = require('./car');
+
 test ('has name', () => {
     // Arrange - do any initial setup
-    const expected = "Mercedes Benz"
+    const expected = audi
+    //    // Act - do the thing we want to test
+    const actual = 
     // Assert - check it worked the way we expect
-    expect("Mercedes Benz").toBe(expected);
+    expect(audi.manufacturer).toBe(expected);
 
 });
 
-test('can set name',() => {
+// test('can set name',() => 
 
-   // Act - do the thing we want to test
-   const actual = ("Mclaren")
 
-});
+
+// });
