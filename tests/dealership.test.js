@@ -37,6 +37,15 @@ test('returns manufacturers', () => {
     expect(actual).toEqual(expected)
 });
 
+test('returns value of all cars in stock'), () => {
+    const expected = 250000
+    const result = dealership.valueOfCars();
+    expect(result).toBe(expected);
+}
+
+
+
+
 
 
 // // Filtered car manufacturer

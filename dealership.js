@@ -26,11 +26,16 @@ Dealership.prototype.manufacturerName = function (){
 }
 
 // FILTER
-Dealership.prototype.getCarByManufacturer = function (){
+Dealership.prototype.getCarByManufacturer = function (manufacturerName){
     const filteredCars = this.carsInStock.filter ("Porsche");
 }
 
-//
-
+// TOTAL VALUE 
+Dealership.prototype.valueOfCars = function(){
+    const totalValue = this.carsInStock.reduce(function(accumulator, car){
+        return accumulator + car.price;
+     }, 0);
+     return totalValue
+};
 
 module.exports = Dealership;
